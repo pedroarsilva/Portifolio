@@ -1,6 +1,8 @@
 # Portifolio
 
 ## Criando um Portifólio como projeto inicial
+## proposta do projeto no git 
+## https://github.com/8020Coding/react-bootstrap-udemy-2022 ##
 
 # React JS & Bootstrap:
 #    https://youtu.be/vD72tRK8mC4
