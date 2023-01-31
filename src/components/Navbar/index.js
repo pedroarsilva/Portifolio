@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from "../../static/logo.png"
 import "./style.css";
+import {FiMenu} from "react-icons/fi"
+
 
 function Navbar() {
     return (
@@ -9,7 +11,8 @@ function Navbar() {
 
                 <a className="navbar-brand" href="#"><img className='logo' src={logo} alt="logo" /></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    {/* <span className="navbar-toggler-icon"></span> */}
+                    <FiMenu color='#FFF' size={24} />
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">

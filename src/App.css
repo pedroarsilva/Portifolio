@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+:root {
+    /* --bs-white: #FFF */
+    --primary-white: #fff;
+    /* --bs-orange: #fd7e14; */
+    --primary-orange: #f9ab00;
+    /* --bs-dark: rgba(255,255,255,0); */
+    --primary-dark: rgba(255,255,255,0);
+    /* --primary-dark: #212529; */
+}
+
+body{
+    font-family: "Roboto Condesed" sans-serif;
+}
