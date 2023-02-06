@@ -1,5 +1,8 @@
 # Portifolio
 
+## IMPORTANTE AULA SOBRE O PORTIFÓLIO DEFINITIVO
+### https://www.youtube.com/watch?v=dK4f2Piqilo
+
 ### https://www.youtube.com/watch?v=cRoBt6AZgjc
 ## https://dev.to/shareef/typing-effect-in-react-with-typed-js-and-hooks-5bl2
 
