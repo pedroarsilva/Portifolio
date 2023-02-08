@@ -1,8 +1,12 @@
+import { useTheme } from "./context/themeContext";
 
 function App() {
   
+  const theme = useTheme()
+  console.log(theme)
+
   return (
-    <div><h1>App</h1></div>
+    <div className="app"><h1>Hello Word</h1></div>
   );
 }
 
