@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { useTheme } from '../../context/themeContext';
 import Button from '../Button';
 import { brief } from '../../utils/icons';
-import AnonymousDark from '../../img/AnonymousDark.jpg';
+import capuz from '../../img/capuz.png';
 import line from '../../img/line.png';
 import Particle from '../Particles';
 
@@ -122,7 +122,7 @@ function Header() {
       </div>
       <div className='right-header'></div>
       <div className='image-con'>
-        <img src={AnonymousDark} alt="" />
+        <img src={capuz} alt="" />
       </div>
       <div className="image-overlay"></div>
       <img src={line} alt="" className="image-line" />
