@@ -18,6 +18,45 @@ const HeaderStyled = styled.header`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   
+  .particles-con{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+  
+  .burger-menu{
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 11;
+    cursor: pointer;
+
+    .line{
+      width: 35px;
+      height: 4px;
+      background-color: ${(props) => props.theme.colorPrimary};
+      margin-bottom: 5px;
+      border-radius: 7px;
+      transition: all .3s ease-in-out;
+      display: flex;
+      box-shadow: 0 3px 5px rgba(0,0,0, 0.5);
+      &:last-child{
+        margin-bottom: 0;
+        width: 20px;
+        align-self: flex-end;
+      }
+    }
+    &:hover{
+      .line:last-child{
+        width: 35px;
+      }
+      }
+    }
+    
+
   .left-header{
     display: flex;
     align-items: center;
@@ -95,6 +134,11 @@ function Header() {
     <HeaderStyled theme={theme}>
       <div className='particles-con'>
       <Particle />
+      </div>
+      <div className='burger-menu'>
+        <div className='line line1'></div>
+        <div className='line line2'></div>
+        <div className='line line3'></div>
       </div>
       <div className='left-header'>
         <div className='left-h-content'>

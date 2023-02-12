@@ -17,4 +17,8 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Share Tech Mono', monospace;
         font-size: clam(1rem, 1.5vw, 1.2rem);
     }
+
+    #tsparticles{
+        height: 100vh;
+    }
 `

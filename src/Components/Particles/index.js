@@ -5,15 +5,11 @@ import { loadFull } from "tsparticles";
 
 function Particle() {
     const particlesInit = useCallback(async engine => {
-        console.log(engine);
-        // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
         await loadFull(engine);
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
+        // await console.log(container);
     }, []);
   return (
     <Particles
@@ -21,24 +17,24 @@ function Particle() {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "#03080C",
-                    },
-                },
-                fpsLimit: 120,
+                // background: {
+                //     color: {
+                //         value: "#03080C",
+                //     },
+                // },
+                // fpsLimit: 120,
                 interactivity: {
-                    events: {
-                        onClick: {
-                            enable: true,
-                            mode: "push",
-                        },
-                        onHover: {
-                            enable: true,
-                            mode: "repulse",
-                        },
-                        resize: true,
-                    },
+                    // events: {
+                    //     onClick: {
+                    //         enable: true,
+                    //         mode: "push",
+                    //     },
+                    //     onHover: {
+                    //         enable: true,
+                    //         mode: "repulse",
+                    //     },
+                    //     resize: true,
+                    // },
                     modes: {
                         push: {
                             quantity: 4,
@@ -51,7 +47,8 @@ function Particle() {
                 },
                 particles: {
                     color: {
-                        value: "#ffffff",
+                        // value: "#ffffff",
+                        value: "#636e72",
                     },
                     links: {
                         color: "#ffffff",
@@ -59,6 +56,8 @@ function Particle() {
                         enable: true,
                         opacity: 0.5,
                         width: 1,
+                        
+                        // enable: false,
                     },
                     collisions: {
                         enable: true,
@@ -70,7 +69,7 @@ function Particle() {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: .7,
                         straight: false,
                     },
                     number: {
@@ -79,9 +78,10 @@ function Particle() {
                             area: 800,
                         },
                         value: 80,
+                        // value: 40,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.75,
                     },
                     shape: {
                         type: "circle",
