@@ -6,6 +6,7 @@
 ## IMPORTANTES AULAS SOBRE PORTIFÓLIOS A UTILIZAR
 #### https://www.youtube.com/watch?v=dK4f2Piqilo
 #### https://www.youtube.com/watch?v=dufmeIlyppU
+## https://github.com/Maclinz/portfoliov2_react
 
 #### ---------------------------------------
 

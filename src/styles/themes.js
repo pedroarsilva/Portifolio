@@ -3,6 +3,8 @@ export const themes = [
         name: "dark",
         colorWhite: "#fff",
         colorBlack: "#000",
+        colorDark: "#010101",
+        colorCrack: "#03080C",
         colorPrimary: "#ff4c60",
         colorBg: '#1E1E1E',
         colorBg2: '#131313',

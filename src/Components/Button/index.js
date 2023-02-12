@@ -10,6 +10,7 @@ const ButtonStyled = styled.button`
     border: none;
     cursor: pointer;
     font-family: inherit;
+    font-size: inherit;
     overflow: hidden;
     i{
         margin-left: .6rem;
@@ -20,7 +21,15 @@ function Button({name, blob, color, icon, bg, bFw, bRad, bPad}) {
   const theme = useTheme()
 
   return (
-    <ButtonStyled theme={theme}>
+    <ButtonStyled 
+    style={{
+      backgroundColor: bg,
+      color: color,
+      borderRadius: bRad,
+      padding: bPad,
+      fontWeight: bFw
+    }}
+      theme={theme}>
       {name}
       {icon}
       <div className={blob}></div>

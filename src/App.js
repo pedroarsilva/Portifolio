@@ -6,7 +6,7 @@ import Button from "./Components/Button";
 
 const AppStyled = styled.div`
   min-height: 100vh;
-  background-color: ${(props) => props.theme.colorBg};
+  background-color: ${(props) => props.theme.colorBlack};
   color: ${(props) => props.theme.colorWhite};
   position: relative;
 `;
@@ -14,7 +14,7 @@ const AppStyled = styled.div`
 function App() {
   
   const theme = useTheme()
-  // console.log(theme)
+  console.log(theme)
 
   return (
     <AppStyled theme={theme}>
