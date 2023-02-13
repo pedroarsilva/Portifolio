@@ -1,10 +1,12 @@
-// 20:18
+
 import styled from "styled-components";
 import { useTheme } from "./context/themeContext";
 import Header from "./Components/Header";
 import Button from "./Components/Button";
 import Navigation from "./Components/Navigation";
 import { useState } from "react";
+import About from "./Pages/About";
+
 
 const AppStyled = styled.div`
   min-height: 100vh;
@@ -32,7 +34,9 @@ function App() {
     <AppStyled theme={theme}>
       <Navigation toggle={toggle} />
       <Header toggle={toggle} setToggle={setToggle} />
-      <Button />
+      <main>
+        <About />
+      </main>
     </AppStyled>
   );
 }

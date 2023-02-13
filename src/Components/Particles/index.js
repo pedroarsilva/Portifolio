@@ -22,7 +22,8 @@ function Particle() {
                 //         value: "#03080C",
                 //     },
                 // },
-                // fpsLimit: 120,
+                fpsLimit: 120,
+                fullScreen: false,
                 interactivity: {
                     // events: {
                     //     onClick: {

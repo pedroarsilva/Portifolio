@@ -1,4 +1,4 @@
-// 30:08
+
 import React from 'react';
 import styled from "styled-components";
 import { useTheme } from '../../context/themeContext';
