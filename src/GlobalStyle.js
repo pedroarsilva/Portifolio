@@ -18,6 +18,13 @@ export const GlobalStyle = createGlobalStyle`
         font-size: clam(1rem, 1.5vw, 1.2rem);
     }
 
+    a, button, input{
+        font-family: inherit;
+        font-size: inherit;
+        text-decoration: none;
+        /* color: inherit;  */
+    }
+
     #tsparticles{
         height: 100vh;
     }

@@ -10,7 +10,15 @@ const NavigationStyled = styled.nav`
   top: 0;
   background-color: red;
   min-height: 10vh;
-  transform: translateX(-50%);
+  transform: 
+    translateX(-50%) 
+    translateY(${props => props.toggle ? '-100%' : 0})
+    scaleX(${props => props.toggle ? '0' : '1'})  
+  ;
+  filter: blur(${props => props.toggle ? '20px' : '0'});
+  opacity: ${props => props.toggle ? '0' : '1'};
+  border-radius: ${props => props.toggle ? '10px' : '0'};
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 850px;
@@ -24,14 +32,40 @@ const NavigationStyled = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    li{
+      margin: 0 1rem;
+
+      a{
+        padding: .6rem .3rem;
+        position: relative;
+        transition: all .4s ease-in-out;
+        color: ${(props) => props.theme.colorWhite};
+        &::after{
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 0%;
+          height: 2px;
+          background-color: ${(props) => props.theme.colorPrimary};
+          transition: all .4s ease-in-out;
+        }
+        &:hover:after{
+          width: 100%;
+        }
+      }
+    }
   }
 `;
 
-function Navigation() {
+function Navigation({toggle}) {
   const theme = useTheme()
 
+  
+
   return (
-    <NavigationStyled theme={theme}>
+    <NavigationStyled toggle={toggle} theme={theme}>
       <ul className='nav-items'>
         <li className='nav-item'>
           <a href='#'>Home</a>

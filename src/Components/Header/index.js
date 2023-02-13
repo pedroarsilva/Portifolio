@@ -127,7 +127,7 @@ const HeaderStyled = styled.header`
   }
 `;
 
-function Header() {
+function Header({toggle, setToggle}) {
   const theme = useTheme()
 
   return (
@@ -135,7 +135,7 @@ function Header() {
       <div className='particles-con'>
       <Particle />
       </div>
-      <div className='burger-menu'>
+      <div className='burger-menu' onClick={() => {setToggle(!toggle)}}>
         <div className='line line1'></div>
         <div className='line line2'></div>
         <div className='line line3'></div>
