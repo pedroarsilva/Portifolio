@@ -3,7 +3,13 @@ import styled from "styled-components";
 import { useTheme } from '../../context/themeContext';
 
 const TitleStyled = styled.div`
+  display: flex;
+  flex-direction: column;
 
+  h2{
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    font-weight: 700;
+  }
 `;
 
 function Title({name, desc}) {

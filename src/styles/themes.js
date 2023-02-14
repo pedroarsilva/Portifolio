@@ -13,6 +13,7 @@ export const themes = [
         colorBg5: '#262626',
         colorBg6: '#202020',
         colorBgGrad: 'linear-gradient(180deg,#222121,#191919)',
+        colorBgGrad2: 'radial-gradient(circle,rgba(0,128,0,0) 68%, RGBA( 169, 169, 169, 1 ) 100%, rgba(0,128,0,0) 70%)',
         aboutBg: '#191919',
         colorGreen: '#6BBE92',
         colorGreenDark: '#27AE60',
