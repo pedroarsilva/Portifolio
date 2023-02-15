@@ -21,7 +21,7 @@ const StatsStyled = styled.div`
         .icon-con{
 
             i{
-                font-size: 2.5rem;
+                font-size: 1.7rem;
                 color: ${(props) => props.theme.colorGrey1};
             }
         }
@@ -29,11 +29,11 @@ const StatsStyled = styled.div`
         .text-con{
             
             h4{
-                font-size: clamp(1.5rem, 2.5vw, 1.2rem);
+                font-size: clamp(1.7rem, 2.5vw, 1.2rem);
             }
             
             p{
-                font-size: clamp(.5rem, 2vw, 1.2rem);
+                font-size: clamp(.5rem, 2vw, .7rem);
                 margin-top: .5rem;
             }
         }

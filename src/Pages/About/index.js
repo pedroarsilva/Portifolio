@@ -1,4 +1,3 @@
-// 1:47
 import React from 'react';
 import styled from "styled-components";
 import { useTheme } from '../../context/themeContext';
@@ -9,7 +8,8 @@ import Button from '../../Components/Button';
 import Progressbar from '../../Components/Progressbar';
 import Stats from '../../Components/Stats';
 import { brief, flame, mug, download, git} from '../../utils/icons'
-
+import shape1 from '../../img/shape1.jpg';
+// import shape2 from '../../img/shape2.png';
 
 
 const AboutStyled = styled(PagesLayout)`
@@ -23,6 +23,7 @@ const AboutStyled = styled(PagesLayout)`
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 1rem;
+        /* grid-gap: 10%; */
 
     }
 
@@ -35,7 +36,7 @@ const AboutStyled = styled(PagesLayout)`
 
         .about-image{
             padding: 1.5rem;
-            background: ${(props) => props.theme.colorBg3};
+            background: ${(props) => props.theme.colorBgGrad};
             border-radius: 5px;
             width: 80%;
             
@@ -59,6 +60,27 @@ const AboutStyled = styled(PagesLayout)`
             }
         }
     }
+
+    .shape1{
+        position: absolute;
+        left: -7px;
+        top: -100px;
+        z-index: 1;
+        opacity: 0.5;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+
+    }
+    /* .shape2{
+        position: absolute;
+        right: -7px;
+        top: 17px;
+        z-index: 1;
+        opacity: 0.2;
+        pointer-events: none;
+
+    } */
 `;
 
 function About(){
@@ -113,7 +135,7 @@ function About(){
         <Stats 
             icon={flame}
             number="1+" 
-            desc="All completed projects" 
+            desc="All projects" 
         />
         <Stats 
             icon={mug}
@@ -123,14 +145,16 @@ function About(){
         <Stats 
             icon={brief}
             number="1+" 
-            desc="Years of experience" 
+            desc="Year Experience" 
         />
         <Stats 
             icon={git}
             number="A+" 
-            desc="Projects carried out this year" 
+            desc="All Projects carried" 
         />
       </div>
+      <img alt="" src={shape1} className="shape1" />
+      {/* <img alt="" src={shape2} className="shape2" /> */}
     </AboutStyled>
   )
 }

@@ -6,6 +6,7 @@ import Button from "./Components/Button";
 import Navigation from "./Components/Navigation";
 import { useState } from "react";
 import About from "./Pages/About";
+import Services from "./Pages/Services";
 
 
 const AppStyled = styled.div`
@@ -28,7 +29,7 @@ function App() {
   // console.log(theme)
 
   // state
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(true)
 
   return (
     <AppStyled theme={theme}>
@@ -36,6 +37,7 @@ function App() {
       <Header toggle={toggle} setToggle={setToggle} />
       <main>
         <About />
+        <Services />
       </main>
     </AppStyled>
   );

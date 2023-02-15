@@ -14,8 +14,20 @@ export const GlobalStyle = createGlobalStyle`
     body{
         background-color: #1E1E1E;
         font-family: 'Roboto', sans-serif;
-        font-family: 'Share Tech Mono', monospace;
+        /* font-family: 'Share Tech Mono', monospace; */
         font-size: clam(1rem, 1.5vw, 1.2rem);
+        overflow-x: hidden;
+        &::-webkit-scrollbar{
+            width: 6px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: #ff4c60;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-track{
+            background-color: #ff4c60;
+            border-radius: #222121;
+        }
     }
 
     a, button, input{
