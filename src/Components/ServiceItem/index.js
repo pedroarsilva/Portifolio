@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { useTheme } from "../../context/themeContext";
 
 const ServiceItemStyled = styled.div`
-    padding: 1.5rem 1rem;
+    padding: 1rem .2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,33 +11,36 @@ const ServiceItemStyled = styled.div`
     transition: all .3s ease-in-out;
     
     .icon{
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-color: ${(props) => props.theme.colorBg3};
+        background-color: ${(props) => props.theme.colorBg3};
         transition: all .3s ease-in-out;
 
         i{
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         &:hover{
-            border-color: ${(props) => props.theme.colorGreen};
+            background-color: ${(props) => props.theme.colorGreen};
         }
     }
+    
     h4{
-        font-size: clamp(1.2rem, 2.5vw);
+        font-size: clamp(1.2rem, 2.0vw, 1.5rem);
         margin: 1.2rem 0;
+        text-align: center;
     }
-
+    
     &:hover{
         transform: translateY(-3px);
     }
-
+    
     p{
+        font-size: clamp(.9rem, 2.5vw, .9rem);
         text-align: center;
     }
 `

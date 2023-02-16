@@ -36,7 +36,7 @@ const AboutStyled = styled(PagesLayout)`
 
         .about-image{
             padding: 1.5rem;
-            background: ${(props) => props.theme.colorBgGrad};
+            background: ${(props) => props.theme.colorBgGrad2};
             border-radius: 5px;
             width: 80%;
             

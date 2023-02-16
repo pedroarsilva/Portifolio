@@ -23,7 +23,7 @@ function Particle() {
                 //     },
                 // },
                 fpsLimit: 120,
-                fullScreen: false,
+                // fullScreen: false,
                 interactivity: {
                     // events: {
                     //     onClick: {

@@ -7,6 +7,7 @@ import Navigation from "./Components/Navigation";
 import { useState } from "react";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
+import Experience from "./Pages/Experience";
 
 
 const AppStyled = styled.div`
@@ -38,6 +39,7 @@ function App() {
       <main>
         <About />
         <Services />
+        <Experience />
       </main>
     </AppStyled>
   );
