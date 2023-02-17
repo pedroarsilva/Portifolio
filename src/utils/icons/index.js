@@ -11,3 +11,4 @@ export const education = <i className="fa-solid fa-user-graduate"></i>
 export const design = <i className="fa-solid fa-bezier-curve"></i>
 export const desktop = <i className="fa-solid fa-desktop"></i>
 export const code = <i className="fa-solid fa-code"></i>
+// export const headset = <i class="fa-solid fa-user-headset"></i>

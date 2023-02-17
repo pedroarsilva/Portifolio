@@ -8,6 +8,7 @@ import { useState } from "react";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Experience from "./Pages/Experience";
+import Portfolios from "./Pages/Portfolio";
 
 
 const AppStyled = styled.div`
@@ -40,6 +41,7 @@ function App() {
         <About />
         <Services />
         <Experience />
+        <Portfolios />
       </main>
     </AppStyled>
   );
