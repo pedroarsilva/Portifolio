@@ -5,11 +5,16 @@ import Title from '../../Components/Title';
 import { PagesLayout } from '../../styles/Layouts';
 import { portfolios as myPortfolios } from '../../data/portifolios';
 import { useState } from 'react';
+import PortfolioItem from '../../Components/PortfolioItem';
 
 
 
 const PortfoliosStyled = styled(PagesLayout)`
-
+    .portfolios-con{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        gap: 2rem;
+    }
 `;
 
 function Portfolios() {
@@ -26,7 +31,7 @@ function Portfolios() {
             <div className='filter-btns'></div>
             <div className='portfolios-con'>
                 {portfolios.map((port) => {
-                    return <li>{port.category}</li>
+                    return <PortfolioItem key={port.id} {...port} />
                 })}
             </div>
         </PortfoliosStyled>
