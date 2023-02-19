@@ -54,9 +54,11 @@ const PortfolioItemStyled = styled.div`
         position: absolute;
         display: flex;
         gap: 2rem;
-        top: 50%;
+        top: 30%;
         left: 50%;
-        transform: translate(-50%, 220px);
+        transform: translate(-50%, 220px) scale(0);
+        transition: all .4s ease-in-out;
+        opacity: 0;
 
         a{
           width: 3.5rem;
@@ -67,12 +69,13 @@ const PortfolioItemStyled = styled.div`
           align-items: center;
           justify-content: center;
           transition: all .4s ease-in-out;
+         
+          &:hover{
+            background-color: ${(props) => props.theme.colorPurple};
+  
+          }
         }
 
-        &:hover{
-          background-color: ${(props) => props.theme.colorPurple};
-
-        }
 
         i{
             font-size: clamp(1rem, 2vw, 1.8rem);
@@ -95,6 +98,7 @@ const PortfolioItemStyled = styled.div`
       .links{
          transition: all .4s ease-in-out;
          opacity: 1;
+         transform: translate(-50%, 50%) scale(1);
       }
   }
 }

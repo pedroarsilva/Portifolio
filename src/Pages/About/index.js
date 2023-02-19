@@ -64,7 +64,7 @@ const AboutStyled = styled(PagesLayout)`
     .shape1{
         position: absolute;
         left: -7px;
-        top: -100px;
+        top: 0px;
         z-index: 1;
         opacity: 0.5;
         pointer-events: none;
