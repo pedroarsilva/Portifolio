@@ -1,3 +1,4 @@
+// 3:07:30
 import React from 'react';
 import styled from "styled-components";
 import { useTheme } from '../../context/themeContext';
@@ -12,7 +13,7 @@ import { getUnique } from '../../utils/helpers';
 
 const PortfoliosStyled = styled(PagesLayout)`
     background: linear-gradiente(180deg, #222121, #191919);
-    
+
     .portfolios-con{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
