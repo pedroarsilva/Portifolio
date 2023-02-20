@@ -9,6 +9,7 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Experience from "./Pages/Experience";
 import Portfolios from "./Pages/Portfolio";
+import Blogs from "./Pages/Blogs";
 
 
 const AppStyled = styled.div`
@@ -42,6 +43,7 @@ function App() {
         <Services />
         <Experience />
         <Portfolios />
+        <Blogs />
       </main>
     </AppStyled>
   );

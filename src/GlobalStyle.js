@@ -40,4 +40,10 @@ export const GlobalStyle = createGlobalStyle`
     #tsparticles{
         height: 100vh;
     }
+
+    .center-title{
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
+    }
 `
