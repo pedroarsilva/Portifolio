@@ -6,7 +6,7 @@ const StatsStyled = styled.div`
     position: relative;
     z-index: 5;
     border-radius: 10px;
-    margin-right: -11rem;
+    /* margin-right: -11rem; */
 
     .inner-con{
         display: grid;

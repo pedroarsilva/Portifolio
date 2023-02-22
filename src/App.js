@@ -1,4 +1,4 @@
-
+// 3:51:00
 import styled from "styled-components";
 import { useTheme } from "./context/themeContext";
 import Header from "./Components/Header";
@@ -10,6 +10,7 @@ import Services from "./Pages/Services";
 import Experience from "./Pages/Experience";
 import Portfolios from "./Pages/Portfolio";
 import Blogs from "./Pages/Blogs";
+import Contact from "./Pages/Contact";
 
 
 const AppStyled = styled.div`
@@ -24,6 +25,29 @@ const AppStyled = styled.div`
   p{
     line-height: 1.9rem;
   }
+
+  footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: ${(props) => props.theme.colorBg2};
+
+    p{
+
+      a{
+        color: ${(props) => props.theme.colorPrimary};
+        transition: all .3s ease-in-out;
+
+        &:hover{
+         color: ${(props) => props.theme.colorGreenDark};
+        }
+      }
+    }
+
+    
+  }
+
 `;
 
 function App() {
@@ -44,7 +68,13 @@ function App() {
         <Experience />
         <Portfolios />
         <Blogs />
+        <Contact />
       </main>
+      <footer>
+        <p>
+          Copywright &copy; 2023 <a href="/">C<span>actus</span> Code</a>. All rights reserved.
+        </p>
+      </footer>
     </AppStyled>
   );
 }

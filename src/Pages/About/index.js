@@ -32,7 +32,7 @@ const AboutStyled = styled(PagesLayout)`
         grid-template-columns: repeat(2, 1fr);
         position: relative;
         z-index: 5;
-        margin-right: -11rem;
+        /* margin-right: -11rem; */
 
         .about-image{
             padding: 1.5rem;
