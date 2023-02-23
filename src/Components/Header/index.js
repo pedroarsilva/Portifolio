@@ -17,6 +17,19 @@ const HeaderStyled = styled.header`
   /* margin-right: -13rem; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @media screen and (max-width: 1600px){
+    padding: 1rem 10rem;
+  }
+  @media screen and (max-width: 1150px){
+    padding: 1rem 6rem;
+  }
+  
+  @media screen and (max-width: 1060px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
   .particles-con{
     position: absolute;
@@ -31,7 +44,7 @@ const HeaderStyled = styled.header`
     right: 3rem;
     display: flex;
     flex-direction: column;
-    z-index: 11;
+    z-index: 15;
     cursor: pointer;
 
     .line{
@@ -64,6 +77,22 @@ const HeaderStyled = styled.header`
     flex-direction: column;
     position: relative;
     z-index: 5;
+    @media screen and (max-width: 1060px){
+      .left-h-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p{
+        text-align: center;
+      }
+
+      .profession{
+        margin-top: 1rem;
+      }
+  }
     
     h2{
       font-size: 4.5rem;
@@ -99,6 +128,9 @@ const HeaderStyled = styled.header`
     right: 0;
     bottom: -7px;
     z-index: 2;
+    @media screen and (max-width: 1060px){
+      display: none;
+    }
     
     img{
       width: 900px;
@@ -114,6 +146,9 @@ const HeaderStyled = styled.header`
     background: ${(props) => props.theme.colorBg};
     z-index: 3;
     opacity: 0.3;
+    @media screen and (max-width: 1060px){
+      display: none;
+    }
   }
 
   .image-line{
@@ -123,6 +158,9 @@ const HeaderStyled = styled.header`
     width: 105%;
     z-index: 1;
     /* opacity: 0.5; */
+    @media screen and (max-width: 1060px){
+      display: none;
+    }
 
   }
 `;

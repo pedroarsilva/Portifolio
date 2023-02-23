@@ -17,12 +17,28 @@ const ContactStyled = styled(PagesLayout)`
         left: 0;
         width: 100%;
         padding-right: 18rem;
+        @media screen and (max-width: 1600px){
+            padding-right: 10rem;
+        }
+        @media screen and (max-width: 1150px){
+            padding-right: 6rem;
+        }
+        @media screen and (max-width: 1255px){
+            padding-right: 0;
+            margin: 0;
+        }
+        @media screen and (max-width: 653px){
+            top: -270px;
+        }
     }
 
     .contact-info{
         display: flex;
         gap: 2rem;
         margin-top: 3rem;
+        @media screen and (max-width: 973px){
+            flex-direction: column;
+        }
 
         .map-section{
             width: 40%;

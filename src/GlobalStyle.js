@@ -25,8 +25,7 @@ export const GlobalStyle = createGlobalStyle`
             border-radius: 10px;
         }
         &::-webkit-scrollbar-track{
-            background-color: #ff4c60;
-            border-radius: #222121;
+            background-color: #222121;
         }
     }
 

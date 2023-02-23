@@ -32,31 +32,43 @@ const AboutStyled = styled(PagesLayout)`
         grid-template-columns: repeat(2, 1fr);
         position: relative;
         z-index: 5;
-        /* margin-right: -11rem; */
+        @media screen and (max-width: 1150px){
+            grid-template-columns: repeat(1, 1fr);
 
+        }
+        /* margin-right: -11rem; */
+        
         .about-image{
             padding: 1.5rem;
             background: ${(props) => props.theme.colorBgGrad2};
             border-radius: 5px;
             width: 80%;
+            @media screen and (max-width: 1150px){
+                width: 100%;
+    
+            }
             
             img{
                 width: 100%;
             }
-
+            
         }
-
+        
         .about-content{
-
+            
             .progress-bars{
                 display: flex;
                 flex-direction: column;
                 gap: 1.5rem;
                 margin-top: 1.5rem;
             }
-
+            
             .btn-con{
                 margin-top: 2rem;
+                @media screen and (max-width: 1150px){
+                    margin-bottom: 2rem;
+        
+                }
             }
         }
     }

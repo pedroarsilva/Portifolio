@@ -27,6 +27,15 @@ const NavigationStyled = styled.nav`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   z-index: 12;
+  @media screen and (max-width: 850px){
+    width: 100%;
+    border-radius: 0;
+    bottom: 0;
+    height: 10vh;
+    top: auto;
+    left: 0;
+    transform: ${(props) => props.theme.toggle ? 'translateY(100%)' : 'translateY(0)'};
+  }
 
   .nav-items{
     display: flex;
@@ -34,7 +43,7 @@ const NavigationStyled = styled.nav`
     justify-content: space-between;
     
     li{
-      margin: 0 1rem;
+      margin: 0 .5rem;
 
       a{
         padding: .6rem .3rem;
