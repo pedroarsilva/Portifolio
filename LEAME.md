@@ -2,17 +2,37 @@
 
 ## MUSICA RELAXAMENTO
 #### https://www.youtube.com/watch?v=G5L1HfkqS8g&t=938s
-
+#
 ## IMPORTANTES AULAS SOBRE PORTIFÓLIOS A UTILIZAR
 #### https://www.youtube.com/watch?v=dK4f2Piqilo
 #### https://www.youtube.com/watch?v=dufmeIlyppU
 ## https://github.com/Maclinz/portfoliov2_react
 
-#### ---------------------------------------
+## SITES E TECNOLOGIAS
+#
+ 
+    https://www.npmjs.com/package/@fortawesome/react-fontawesome
+###
+    https://react-icons.github.io/react-icons/icons?name=fa
+###
+    https://undraw.co/search
+###
+    https://fonts.google.com/specimen/Share+Tech+Mono?query=share
+###
+    https://cdnjs.com/libraries/font-awesome
+###
+    https://loremipsum.io/
+###
+    https://yandex.com/search/?text=cactus&lr=105720
+###
+    https://greensock.com/ease-visualizer/
+
+
+#
 
 ## Personalizar github
 ##### https://www.youtube.com/watch?v=cRoBt6AZgjc
-
+#
 ### Criando um Portifólio como projeto inicial
 #### proposta do projeto no git 
 ##### https://github.com/8020Coding/react-bootstrap-udemy-2022

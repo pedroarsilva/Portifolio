@@ -1,5 +1,5 @@
 // 4:17:45
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from "styled-components";
 import { useTheme } from '../../context/themeContext';
 import Title from '../../Components/Title';
@@ -8,6 +8,7 @@ import { portfolios as myPortfolios } from '../../data/portifolios';
 import { useState } from 'react';
 import PortfolioItem from '../../Components/PortfolioItem';
 import { getUnique } from '../../utils/helpers';
+import gsap from 'gsap';
 
 
 
@@ -59,6 +60,9 @@ const PortfoliosStyled = styled(PagesLayout)`
 function Portfolios() {
     const theme = useTheme()
 
+    //refs
+    const portCon = useRef()
+
     // console.log([1,1,2,3,4,4,44,2,5,7,8])
     // console.log([...new Set([1,1,2,3,4,4,44,2,5,7,8].map(item => item))])
 
@@ -72,7 +76,31 @@ function Portfolios() {
 
     function filterPortfolios(category, index){
         if(category === 'All'){
-            setPortfolios(myPortfolios)
+            //  gsap para transição de animação
+            // scale, scaleY, scaleX
+            gsap.to(portCon.current,{ 
+                duration: 0.5,
+                opacity: 0,
+                y: 20,
+                ease: 'power4.out',
+                onComplete: () => {
+                    gsap.fromTo(portCon.current, {
+                        y: 20,
+                        opacity: 0,
+                        scale: 0
+                    },
+                    {
+                        duration: 0.5,
+                        y: 20,
+                        opacity: 1,
+                        scale: 1,
+                        ease: 'power4.out',
+                    })
+                    setPortfolios(myPortfolios)
+                    
+                }
+            })
+            // setPortfolios(myPortfolios)
             activeCategory(index)
             return
         }
@@ -82,7 +110,28 @@ function Portfolios() {
         })
 
         activeCategory(index)
-        setPortfolios(filtered)
+        // setPortfolios(filtered)
+        //  gsap para transição de animação
+            // scale, scaleY, scaleX
+            gsap.to(portCon.current,{ 
+                duration: 0.5,
+                opacity: 0,
+                y: 25,
+                ease: 'power4.out',
+                onComplete: () => {
+                    gsap.to(portCon.current, 
+                        {
+                        
+                    
+                        duration: 0.5,
+                        y: 20,
+                        opacity: 1,
+                        ease: 'power4.out',
+                    })
+                    setPortfolios(filtered)
+                    
+                }
+            })
     }
 
     return (
@@ -104,7 +153,7 @@ function Portfolios() {
                     })
                 }
             </div>
-            <div className='portfolios-con'>
+            <div className='portfolios-con' ref={portCon}>
                 {portfolios.map((port) => {
                     return <PortfolioItem key={port.id} {...port} />
                 })}
