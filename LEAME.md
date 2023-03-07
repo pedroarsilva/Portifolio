@@ -2,6 +2,10 @@
 
 ## MUSICA RELAXAMENTO
 #### https://www.youtube.com/watch?v=G5L1HfkqS8g&t=938s
+## Deep Work Music para programadores
+#### https://www.youtube.com/watch?v=Z6dIdJX4ens
+#### https://www.youtube.com/watch?v=SCXX91QnZSg
+#### https://www.youtube.com/watch?v=3NFCYroOHzs 
 #
 ## IMPORTANTES AULAS SOBRE PORTIFÓLIOS A UTILIZAR
 #### https://www.youtube.com/watch?v=dK4f2Piqilo
