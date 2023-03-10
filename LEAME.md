@@ -14,6 +14,9 @@
 
 ## SITES E TECNOLOGIAS
 #
+### PROJETO QUIZ
+    https://www.youtube.com/watch?v=HlkbeikH8cs
+#
  
     https://www.npmjs.com/package/@fortawesome/react-fontawesome
 ###
